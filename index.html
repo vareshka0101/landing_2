@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Krona+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+</head>
+
+<body>
+    <!-- Header с фоновым изображением и логотипом -->
+    <header class="header">
+        <div class="header_container">
+            <div class="header_title">
+                <img src="image/logo_garant.png" alt="Logo" class="logo">
+                <p>
+                    Мы поможем оценить и выбрать наиболее подходящий Вам объект недвижимости.
+                </p>
+                <div>
+                    <button type="button" id="feedback" class="header_button">найти объект</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- навигационная панель с ссылками на разделы -->
+
+    <div class="navbar">
+
+        <a href="#about" class="nav_link">О компании</a>
+        <a href="#objects" class="nav_link">Объекты</a>
+        <a href="#rating" class="nav_link">Оценка</a>
+        <a href="#reviews" class="nav_link">Отзывы</a>
+        <a href="#contacts" class="nav_link">Контакты</a>
+
+    </div>
+
+<!-- бургерное меню (скрыто для десктопа) -->
+
+<div id="menuToggle">
+
+    <input type="checkbox" id="menuCheckbox">
+
+    <span></span>
+    <span></span>
+    <span></span> 
+
+     <ul id="menu">
+
+        <li>
+            <a href="#about">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">О компании</label>
+            </a>
+        </li>
+        <li>
+            <a href="#objects">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Объекты</label>
+            </a>
+        </li>
+        <li>
+            <a href="#rating">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Оценка</label>
+            </a>
+        </li>
+
+        <li>
+            <a href="#reviews">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Отзывы</label>
+            </a>
+        </li>
+
+        <li>
+            <a href="#contacts">
+                <label for="menuCheckbox" onclick="this.parentNode.click();">Контакты</label>
+            </a>
+        </li>
+
+    </ul> 
+ </div>
+
+
+
+
+
+    <div id="about">
+
+        <div class="left_main">
+            <p class="left_main_p up">Ваш надежный гарант в мире недвижимости. Профессиональная помощь в любых сделках с
+                недвижимостью.</p>
+            <img src="image/f1fcd0fe3c474a0394f8005d265143e4.png" alt="foto_2" class="center-image image1">
+            <img src="image/sea_h.png" alt="foto_3" class="center-image image2">
+                
+            <p class="left_main_p down">Мы имеем отличную репутацию и множество положительных отзывов от довольных
+                клиентов. Хорошо знаем рынок недвижимости в нашем регионе.</p>
+        </div>
+        <div class="right_main">
+            
+            <img src="image/flag_orange.png" alt="foto_1" class="top-right-image">
+            <img src="image/flag_tel.png" alt="foto_3" class="media_image">
+            <span class="fithteen">15+<br> </span> <span class="fithteen_small">лет</span>
+            <div class="about_text">
+                <h2 class="about_text_h2">О компании</h2>
+                <p class="about_text_p">Наша компания имеет многолетний опыт работы на рынке недвижимости</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- карусель изображений -->
+
+    <div class="carousel">
+        <div class="carousel__viewport" id="carouselViewport">
+            <div class="carousel__slide"><img src="/image/1.png" alt="Image 1"></div>
+            <div class="carousel__slide"><img src="/image/2.png" alt="Image 2"></div>
+            <div class="carousel__slide"><img src="/image/3.jpeg" alt="Image 3"></div>
+            <div class="carousel__slide"><img src="/image/4.jpg" alt="Image 4"></div>
+            <div class="carousel__slide"><img src="/image/5.jpg" alt="Image 5"></div>
+            <div class="carousel__slide"><img src="/image/6.png" alt="Image 6"></div>
+            <div class="carousel__slide"><img src="/image/7.png" alt="Image 7"></div>
+        </div>
+
+        <div class="carousel__navigation" id="carouselNavigation">
+        </div>
+    </div>
+
+    <div class="greenbg"></div>
+    <!-- раздел оценка -->
+
+    <!-- бегущая строка -->
+    <article class="wrapper">
+        <div class="marquee">
+            <div class="marquee__group">
+                <div class="box">продажа</div>
+                <div class="box">покупка</div>
+                <div class="box">обмен</div>
+                <div class="box">аренда</div>
+                <div class="box">ипотека</div>
+                <div class="box">покупка</div>
+                <div class="box">обмен</div>
+
+            </div>
+            <div aria-hidden="true" class="marquee__group">
+                <div class="box">продажа</div>
+                <div class="box">покупка</div>
+                <div class="box">обмен</div>
+                <div class="box">аренда</div>
+                <div class="box">ипотека</div>
+                <div class="box">покупка</div>
+                <div class="box">обмен</div>
+
+            </div>
+        </div>
+    </article>
+
+
+    <!-- раздел оценка -->
+    <div id="rating">
+
+        <div class="left-column">
+            <span class="lc_p">оценка<br> недвижимости</span>
+            <p>от экспертов со стажем</p>
+            <button type="button" class="header_button main_button">консультация</button>
+        </div>
+
+
+        <div class="right-column">
+            <div class="icon-text">
+                <img src="image/calc.png" alt="calc">
+                <span>Оценочная экспертиза</span>
+            </div>
+            <div class="icon-text">
+                <img src="image/house_icon.png" alt="house">
+                <span>Строительная экспертиза</span>
+            </div>
+            <div class="icon-text">
+                <img src="image/blank.png" alt="blank">
+                <span>Судебная экспертиза</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="green_vs_text">
+        <p>
+            Мы сэкономим ваше время, представляя вам только те объекты, которые соответствуют вашим требованиям и
+            бюджету. У нас всегда объективная информация о рынке недвижимости, чтобы вы могли принять взвешенное
+            решение.
+        </p>
+    </div>
+
+
+    <!-- объекты недвижимости -->
+
+    <div id="objects">
+        <!-- Контейнер с изображениями -->
+        <h2><span class="obj_title">ОБЪЕКТЫ</span><br>НЕДВИЖИМОСТИ</h2>
+        <div class="image-container">
+            <img src="image/flat.png" alt="Flat">
+            <img src="image/houzze.png" alt="House">
+            <img src="image/commers.png" alt="Commercial">
+        </div>
+
+        <!-- Контейнер с текстом -->
+        <div class="text-container">
+            <div class="tc_inner">
+                <h3>КВАРТИРЫ</h3>
+                <div class="text_item">
+                    <span>от</span>
+                    <p>2 900 000+</p><span>руб.</span>
+                </div>
+            </div>
+
+            <div class="tc_inner item">
+                <h3>ДОМА</h3>
+                <div class="text_item">
+                    <span>от</span>
+                    <p>4 800 000+</p><span>руб.</span>
+                </div>
+            </div>
+
+
+            <div class="tc_inner">
+                <h3>КОММЕРЧЕСКАЯ</h3>
+                <div class="text_item">
+                    <span>от</span>
+                    <p>3 200 000+</p><span>руб.</span>
+                </div>
+            </div>
+
+        </div>
+        <a href="https://krym.cian.ru/" class="header_button object_button" role="button" target="_blank">НАЙТИ
+            ОБЪЕКТ</a>
+
+
+
+        <!-- что мы предлагаем -->
+
+        <div class="grid-container">
+            <h1>ЧТО МЫ ПРЕДЛАГАЕМ:</h1>
+            <div class="grid_block left_inner_block">
+                <div class="inner-block hed_block">
+                    <p>Для продавцов</p><img src="image/flower_orange.png"  class="orang_fl" alt="flower">
+                </div>
+                <div class="inner-block dot-before w_block">
+                    <p class="grid_text">Максимальная цена продажи</p>
+                </div>
+                <div class="inner-block dot-before w_block">
+                    <p class="grid_text">Быстрая продажа</p>
+                </div>
+                <div class="inner-block dot-before w_block">
+                    <p class="grid_text">Экспертное сопровождение на каждом этапе</p>
+                </div>
+                <div class="inner-block dot-before w_block">
+                    <p class="grid_text">Профессиональное представление недвижимости</p>
+                </div>
+            </div>
+
+            <!-- правый  блок -->
+            <div class="grid_block right_inner_block">
+                <div class="inner-block hed_block">
+                    <p>Для покупателей</p><img src="image/flower_blue.png" alt="flower">
+                </div>
+                <div class="inner-block dot-before  b_block">
+                    <p class="grid_text">Доступ к широкой базе объектов</p>
+                </div>
+                <div class="inner-block dot-before  b_block">
+                    <p class="grid_text">Экспертные консультации</p>
+                </div>
+                <div class="inner-block dot-before b_block">
+                    <p class="grid_text">Помощь в получении ипотеки</p>
+                </div>
+                <div class="inner-block dot-before b_block">
+                    <p class="grid_text">Юридическая поддержка</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- раздел отзывы -->
+    <div id="reviews">
+        <div class="container">
+            <!-- Левый блок с каруселью отзывов -->
+            <div class="reviews-carousel">
+                <div class="review active">
+                    <h1>Отзывы
+                        наших клиентов</h1>
+                    <p>
+                        "Хочу выразить огромную благодарность агентству "ГАРАНТ" и лично риелтору, Анне Ивановой, за
+                        помощь в приобретении
+                        моей первой квартиры! Я долго не мог решиться и очень боялся сделать неправильный выбор. Анна
+                        была очень внимательна к
+                        моим потребностям и пожеланиям, терпеливо отвечала на все мои вопросы (которых было очень
+                        много!). Она организовала
+                        показы квартир, соответствующих моему бюджету и требованиям, и всегда была на связи.
+                        Рекомендую!" </p>
+                    <p class="sign">Наталья К.</p>
+                </div>
+                <div class="review">
+                    <h1>Отзывы
+                        наших клиентов</h1>
+                    <p>
+                        "Агентство провело профессиональную оценку нашей квартиры, определив ее рыночную стоимость. Была
+                        разработана эффективная
+                        маркетинговая стратегия, включающая размещение объявлений на ведущих интернет-площадках и
+                        проведение показов
+                        потенциальным покупателям. Мы были приятно удивлены оперативностью и профессионализмом
+                        сотрудников "ГАРАНТ"." </p>
+                    <p class="sign">Иван Васильев</p>
+                </div>
+                <div class="review">
+                    <h1>Отзывы
+                        наших клиентов</h1>
+                    <p>
+                        "В "ГАРАНТ" нам предоставили квалифицированного консультанта по коммерческой недвижимости,
+                        который помог нам разобраться
+                        во всех нюансах и выбрать наиболее перспективные объекты. Были проанализированы различные
+                        варианты, учтены факторы,
+                        влияющие на доходность и риски. В итоге, мы приобрели помещение под магазин в перспективном
+                        районе города, которое в
+                        дальнейшем стало приносить стабильный доход." </p>
+                    <p class="sign">Виктор П.</p>
+                </div>
+                <div class="review">
+                    <h1>Отзывы
+                        наших клиентов</h1>
+                    <p>
+                        "Агентство провело профессиональную оценку нашей квартиры, определив ее рыночную стоимость. Была
+                        разработана эффективная
+                        маркетинговая стратегия, включающая размещение объявлений на ведущих интернет-площадках и
+                        проведение показов
+                        потенциальным покупателям. Мы были приятно удивлены оперативностью и профессионализмом
+                        сотрудников "ГАРАНТ"." </p>
+                    <p class="sign">Иван Васильев</p>
+                </div>
+                <div class="review">
+                    <h1>Отзывы
+                        наших клиентов</h1>
+                    <p>
+                        "Хочу выразить огромную благодарность агентству "ГАРАНТ" и лично риелтору, Анне Ивановой, за
+                        помощь в приобретении
+                        моей первой квартиры! Я долго не мог решиться и очень боялся сделать неправильный выбор. Анна
+                        была очень внимательна к
+                        моим потребностям и пожеланиям, терпеливо отвечала на все мои вопросы (которых было очень
+                        много!). Она организовала
+                        показы квартир, соответствующих моему бюджету и требованиям, и всегда была на связи.
+                        Рекомендую!" </p>
+                    <p class="sign">Наталья К.</p>
+                </div>
+                <div class="review">
+                    <h1>Отзывы
+                        наших клиентов</h1>
+                    <p>
+                        "В "ГАРАНТ" нам предоставили квалифицированного консультанта по коммерческой недвижимости,
+                        который помог нам разобраться
+                        во всех нюансах и выбрать наиболее перспективные объекты. Были проанализированы различные
+                        варианты, учтены факторы,
+                        влияющие на доходность и риски. В итоге, мы приобрели помещение под магазин в перспективном
+                        районе города, которое в
+                        дальнейшем стало приносить стабильный доход." </p>
+                    <p class="sign">Виктор П.</p>
+                </div>
+            </div>
+
+
+            <!-- Кнопки-точки для переключения отзывов -->
+            <div class="dots">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+            </div>
+
+            <!-- Правый блок с изображением и кнопкой -->
+            <div class="image-block">
+                <img src="image/rew_f.png" Описание картинки">
+                <button id="openModalBtn" >Оставить отзыв</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+
+    <div id="contacts">
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="image/logo 3.png" alt="Логотип" class="logo_footer">
+                <p> Юр. адрес: Респ. Крым, ул. Свердлова, д. 52</p>
+            </div>
+
+            <div class="footer-center">
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-vk"></i></a>
+            </div>
+
+            <div class="footer-right">
+                <label>
+                    <input type="checkbox" name="terms" class="footer_check">
+                    <img src="image/icons8-checkmark.svg" alt="icon">Согласен с <span class="blue">политикой
+                        конфиденциальности
+                        сайта </span>и даю согласие <span class="blue">на обработку персональных данных, разрешенных для
+                        распространения.</span>
+                </label>
+                <p class="red">+7(978) 524-39-87</p>
+                <p class="copyr">© 2025 KotVsapogakhk
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!--  форма обратной связи -->
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <form>
+                <img src="image/f_bform (1).png" alt="form">
+                <p>Оставьте заявку, и Вам перезвонят в ближайшее время</p>
+                <input type="text" placeholder="Ваше имя" required>
+                <input type="tel" placeholder="+7 (___) ___-__-__"
+                    pattern="\+7\s?[\(]{0,1}[0-9]{3}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required>
+
+                <button type="button">Заказать звонок</button>
+            </form>
+        </div>
+    </div>
+
+<!--  форма обратной связи остаит отзыв-->
+
+<div id="myModal" class="modal_1">
+    <div class="modal-content_1">
+
+        <span class="close">×</span>
+
+
+        <h2>Оставить отзыв о нашей работе</h2>
+
+
+        <form id="myForm">
+
+            <label for="name"></label>
+            <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+            <br>
+
+            <label for="email"></label>
+            <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+            <br>
+
+            <label for="message"></label>
+            <textarea id="message" name="message" rows="4" required placeholder="Введите ваше сообщение"></textarea>
+
+
+            <button type="submit" class="submit_btn">Отправить</button>
+        </form>
+    </div>
+</div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
