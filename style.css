@@ -26,7 +26,7 @@ body {
 
 .header_container {
     min-height: 825px;
-    background-image: url(../image/fonn.png);
+    background-image: url(image/fonn.png);
     background-repeat: no-repeat;
     margin: 0 auto;
     background-size: cover;
